@@ -15,4 +15,11 @@ def lataa_amparista(amparinimi: str, tiedostonimi:str, latauskohde:str):
     blob = bucket.blob(tiedostonimi)
     blob.download_to_filename(latauskohde)
 
-    print(f"Ladattiin filu {tiedostonimi} ämpäristä {amparinimi} kansioon {latauskohde}.")
+    print(f"Ladattiin filu {tiedostonimi} ämpäristä {amparinimi} nimellä {latauskohde}.")
+
+print("Haetaan juttuja bucketista!")
+amparinimi = input("Mikä bucket ID: ")
+tiedostoid = input("Haettavan jutun ID: ")
+tiedostonimi = input("Millä nimellä ladataan: ")
+
+lataa_amparista(amparinimi,tiedostoid,tiedostonimi)

@@ -10,3 +10,9 @@ def poista_amparista(amparinimi:str, tiedostonimi:str):
     blob.delete()
 
     print(f"Filu/blob {tiedostonimi} poistettu bucketista.")
+
+print("Poistetaan juttuja bucketista!")
+ampari = input("Mikä bucket ID: ")
+tiedosto = input("Mikä ID poistetaan: ")
+
+poista_amparista(ampari,tiedosto)

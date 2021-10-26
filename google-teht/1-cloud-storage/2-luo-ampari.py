@@ -13,3 +13,7 @@ def luo_ampari(ampari_nimi:str):
 
     return new_bucket
 
+print("Luodaan uusi bucket!")
+bucket_nimi = input("Syötä oikeanmuotoinen nimi: ")
+
+luo_ampari(bucket_nimi)
